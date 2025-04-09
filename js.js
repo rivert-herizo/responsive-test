@@ -15,3 +15,11 @@ window.addEventListener("scroll", () => {
 
 // Reapply the responsiveness if needed
 window.dispatchEvent(new Event('resize'));
+
+function toggleMenu() {
+    const menuIcon = document.querySelector(".menu-icon");
+    const mobileMenu = document.querySelector(".header-mobile");
+
+    menuIcon.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+}
